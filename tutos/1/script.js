@@ -21,10 +21,12 @@ function valider1() {
 
 function validerFloat() {
   const reponse = id("float").value;
-  
+
   if (reponse === "bon") {
-    alert("Correct !")
+    alert("Correct !");
+  } else if (reponse === "pas-bon") {
+    alert("Faux ! Relisez attentivement le paragraphe.");
   } else {
-    alert("Faux ! Relisez attentivement le paragraphe");
+    alert("Veuillez choisir une option.");
   }
 }
