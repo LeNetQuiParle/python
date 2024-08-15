@@ -15,6 +15,16 @@ function valider1() {
   } else if (reponse2 === "'" || reponse2 === '"') {
     alert("Deuxième réponse correcte !");
   } else {
-    alert("Tout faux ! :(");
+    alert("Tout faux ! :(  Relisez attentivement le paragraphe");
+  }
+}
+
+function validerFloat() {
+  const reponse = id("float").value;
+  
+  if (reponse === "bon") {
+    alert("Correct !")
+  } else {
+    alert("Faux ! Relisez attentivement le paragraphe");
   }
 }
