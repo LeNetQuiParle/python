@@ -20,9 +20,21 @@ function valider1() {
 }
 
 function validerFloat() {
-  const reponse = id("float").value;
+  let reponseFloat = id("float").value;
 
-  if (reponse === "bon") {
+  if (reponseFloat === "bon") {
+    alert("Correct !");
+  } else if (reponse === "pas-bon") {
+    alert("Faux ! Relisez attentivement le paragraphe.");
+  } else {
+    alert("Veuillez choisir une option.");
+  }
+}
+
+function validerBool() {
+  let reponseBool = id("bool").value;
+
+  if (reponseBool === "bon") {
     alert("Correct !");
   } else if (reponse === "pas-bon") {
     alert("Faux ! Relisez attentivement le paragraphe.");
