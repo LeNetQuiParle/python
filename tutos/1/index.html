@@ -75,7 +75,7 @@
             <div class="card border-primary mb-3">
               <div class="card-header">Type de donnée</div>
               <div class="card-body">
-                <h4 class="card-title">Chaînes de caractères</h4>
+                <h4 class="card-title">Chaîne de caractères</h4>
                 <p class="card-text">
                   Les chaînes de caractères peuvent être des lettres, majuscules ou minuscules, des nombres, des carctères spéciaux... Différemment des autres types, elles sont toujours entourées par des guillemets doubles ou simples, comme la chaine çi dessous:
                 </p>
@@ -110,7 +110,7 @@
             <div class="card border-primary mb-3">
               <div class="card-header">Type de donnée</div>
               <div class="card-body">
-                <h4 class="card-title">Nombres entier</h4>
+                <h4 class="card-title">Nombre entier</h4>
                 <p class="card-text">
                   Les nombres entiers, en anglais "integrers", sont simplement des nombres. Ils n'ont pas besoin de guillemets et doivent être des nombres entiers.
                 </p>
@@ -138,6 +138,32 @@
   									<span class="input-group-text">141592653579893238</span>
 									</div>
 									<div class="input-group">
+  									<button class="btn btn-primary" type="button" onclick="validerFloat()">
+    									Valider
+  									</button>
+									</div>
+                </form>
+              </div>
+            </div>
+						<div class="card border-primary mb-3">
+              <div class="card-header">Type de donnée</div>
+              <div class="card-body">
+                <h4 class="card-title">Booléen</h4>
+                <p class="card-text">
+                  Un booléen ,"boolean" en anglais, peut avoir seulement deux valeurs : True ou False (vrai ou faux, quoi). La première lettre est en majuscule, et on le différencie à une chaîne de caractères à cause des guillemets, qu'il n'a pas. En général, c'est le résultat d'une opération, comme la vérification que 5 = 4 (s'écrit 4 == 5 et renvoie False, puisque 4 n'est pas égal à 5).
+									<br />
+									Entrez un des deux booléens valides :
+                </p>
+								<form>
+									<div class="input-group">
+  									<select class="form-select" id="">
+    									<option selected disabled value="">choisissez</option>
+    									<option value="pas-bon">"true"</option>
+    									<option value="bon">True</option>
+    									<option value="pas-bon">true</option>
+											<option value="bon">False</option>
+    									<option value="pas-bon">'False'</option>
+  									</select>
   									<button class="btn btn-primary" type="button" onclick="validerFloat()">
     									Valider
   									</button>
