@@ -24,7 +24,7 @@ function validerFloat() {
 
   if (reponseFloat === "bon") {
     alert("Correct !");
-  } else if (reponse === "pas-bon") {
+  } else if (reponseFloat === "pas-bon") {
     alert("Faux ! Relisez attentivement le paragraphe.");
   } else {
     alert("Veuillez choisir une option.");
@@ -36,7 +36,7 @@ function validerBool() {
 
   if (reponseBool === "bon") {
     alert("Correct !");
-  } else if (reponse === "pas-bon") {
+  } else if (reponseBool === "pas-bon") {
     alert("Faux ! Relisez attentivement le paragraphe.");
   } else {
     alert("Veuillez choisir une option.");
