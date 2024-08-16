@@ -80,26 +80,20 @@
                   Les chaînes de caractères peuvent être des lettres, majuscules ou minuscules, des nombres, des carctères spéciaux... Différemment des autres types, elles sont toujours entourées par des guillemets doubles ou simples, comme la chaine çi dessous:
                 </p>
                 <form>
-                  <div class="input-group">
-                    <input
-                      type="text"
-                      placeholder="réponse ici"
-                      class="form-control"
-                      id="reponse1"
-                    />
-                    <span class="input-group-text">Lorem ipsum dolor sit amet adipiscing consectetur.</span>
-                    <input
-                      type="text"
-                      placeholder="réponse ici"
-                      class="form-control"
-                      id="reponse2"
-                    />
-                  </div>
+									<div class="input-group">
+                  	<select class="form-select" id="str">
+    									<option selected disabled value="">choisissez</option>
+    									<option value="pas-bon">Lorem ipsumcdolor</option>
+    									<option value="bon">"Lorem ipsum dolor"</option>
+    									<option value="pas-bon">{Lorem ipsum dolor}</option>
+    									<option value="bon">'Lorem ipsum dolor'</option>
+  									</select>
+									</div>
 									<div class="input-group">
 										<button
                       class="btn btn-primary"
                       type="button"
-                      onclick="valider1()"
+                      onclick="validerStr()"
                     >
                       Valider
                     </button>
@@ -112,7 +106,7 @@
               <div class="card-body">
                 <h4 class="card-title">Nombre entier</h4>
                 <p class="card-text">
-                  Les nombres entiers, en anglais "integrers", sont simplement des nombres. Ils n'ont pas besoin de guillemets et doivent être des nombres entiers.
+                  Les nombres entiers, en anglais "integers", sont simplement des nombres. Ils n'ont pas besoin de guillemets et doivent être des nombres entiers.
                 </p>
               </div>
             </div>
@@ -127,15 +121,13 @@
                 </p>
                 <form>
 									<div class="input-group">
-  									<span class="input-group-text">3</span>
   									<select class="form-select" id="float">
     									<option selected disabled value="">choisissez</option>
-    									<option value="pas-bon">,</option>
-    									<option value="pas-bon">:</option>
-    									<option value="bon">.</option>
-    									<option value="pas-bon">;</option>
+    									<option value="pas-bon">3,1416</option>
+    									<option value="pas-bon">3:1416</option>
+    									<option value="bon">3.1416</option>
+    									<option value="pas-bon">3;1416</option>
   									</select>
-  									<span class="input-group-text">141592653579893238</span>
 									</div>
 									<div class="input-group">
   									<button class="btn btn-primary" type="button" onclick="validerFloat()">
