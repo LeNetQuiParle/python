@@ -2,20 +2,15 @@ function id(id) {
   return document.getElementById(id);
 }
 
-function valider1() {
-  const reponse1 = id("reponse1").value;
-  const reponse2 = id("reponse2").value;
+function validerStr() {
+  let reponseStr = id("str").value;
 
-  if (reponse1 === "'" || reponse1 === '"') {
-    if (reponse2 === "'" || reponse2 === '"') {
-      alert("Correct !");
-    } else {
-      alert("Première réponse correcte !");
-    }
-  } else if (reponse2 === "'" || reponse2 === '"') {
-    alert("Deuxième réponse correcte !");
+  if (reponseStr === "bon") {
+    alert("Correct !");
+  } else if (reponseStr === "pas-bon") {
+    alert("Faux ! Relisez attentivement le paragraphe.");
   } else {
-    alert("Tout faux ! :(  Relisez attentivement le paragraphe");
+    alert("Veuillez choisir une option.");
   }
 }
 
