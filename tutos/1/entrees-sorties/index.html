@@ -50,7 +50,6 @@
         margin: 0;
         padding-left: 5px;
         border-left: 5px solid green;
-        border-radius: 2px;
       }
     </style>
   </head>
@@ -117,7 +116,7 @@
                 <p class="card-text">
                   Contrôler les entrées et les sorties de données est souvent important dans une application ou un site web. On a souvent besoin du choix de l'utlisateur pour savoir quoi faire ou pour rendre dynamique notre application, et on  utilise encore plus sovent la sortie de données que ce soit pour donner le résultat d'une opération ou pour afficher le rendu 3D d'un jeu vidéo.
                   <br />
-                  Vous allez découvrir comment récupérer et envoyer des données de l'utilisateur en utilisant python pour modifier des choses.
+                  Vous allez découvrir comment récupérer et envoyer des données de l'utilisateur en utilisant python.
                 </p>
                 <h5>Les sorties</h5>
                 <p>
@@ -129,6 +128,15 @@
 <code>texte_a_afficher = "Bonjour Tom !"</code>       
 <code>print(texte_a_afficher)</code>
 </pre>
+            <p>
+              L'endroit dans lequel les sorties sont affichées s'appelle une <strong>console</strong>. Chaque instruction <em>print()</em> écrit son message sur une ligne, les différents messages sont donc sur plusieurs lignes. Vous pouvez aussi sauter une ligne en écrivant "\n" dans une chaîne de caractères.
+            </p>
+            <h6>Petit supplément, mais important: f-strings</h6>
+            <p>
+              Pour combiner des variables et du texte, par exmple pour dire le nombre de messages non lus sur une messageries, on utilise souvent des f-strings. On pourrait l'écire comme ça <code>"Vous avez " + messages + " messages non lus."</code>, mais en utiliant une f-string, ce serait plus simple à lire et à écrire.
+              <br />
+              Les f-strings fonctionnent simplement : vous commencez par un <em>f</em>, puis les guillemets <em>""</em>. Vous écrivez votre texte, et à chaque fois que vous voudrez insérer la valeur d'une variable, vous écrirez son nom entre des accolades ( <em>{</em> et <em>}</em> ). Ainsi, l'exemple précédent ressemblera donc à ceci : <code>f"Vous avez {messages} non lus."</code>. C'est plus simpe, non ?
+            </p>
           </div>
         </div>
       </div>
