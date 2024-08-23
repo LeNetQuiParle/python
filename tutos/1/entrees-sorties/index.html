@@ -135,7 +135,20 @@
             <p>
               Pour combiner des variables et du texte, par exmple pour dire le nombre de messages non lus sur une messageries, on utilise souvent des f-strings. On pourrait l'écire comme ça <code>"Vous avez " + messages + " messages non lus."</code>, mais en utiliant une f-string, ce serait plus simple à lire et à écrire.
               <br />
-              Les f-strings fonctionnent simplement : vous commencez par un <em>f</em>, puis les guillemets <em>""</em>. Vous écrivez votre texte, et à chaque fois que vous voudrez insérer la valeur d'une variable, vous écrirez son nom entre des accolades ( <em>{</em> et <em>}</em> ). Ainsi, l'exemple précédent ressemblera donc à ceci : <code>f"Vous avez {messages} non lus."</code>. C'est plus simpe, non ?
+              Les f-strings fonctionnent simplement : vous commencez par un <em>f</em>, puis les guillemets <em>""</em>. Vous écrivez votre texte, et à chaque fois que vous voudrez insérer la valeur d'une variable, vous écrirez son nom entre des accolades ( <em>{</em> et <em>}</em> ). Ainsi, l'exemple précédent ressemblera donc à ceci : <code>f"Vous avez {messages} messages non lus."</code>. C'est plus simpe, non ?
+            </p>
+            <h5>Les entrées</h5>
+            <p>
+              Les entrées sont plutôt simples à utiliser en python. On utilise l'instruction <code>input()</code>, et on met entre parenthèses un texte qui dira à l'utilsateur quoi écrire. Par exemple, écrire
+              <br /><code>input("Entrez votre nom")</code><br />
+              Donnera en général une sortie formulée comme ceci : <strong>Entrez votre nom _ </strong>. L'underscore à la fin du message est le curseur, qui montre où on va écrire. Vous vous dites peut-être : on ne comprend pas bien qu'il faut écrire là où est l'underscore... Vous pouvez donc ajouter "\n" à la fin de vos messages, ce qui fera sauter un ligne après le message.
+              <br />
+              Maintenant, vous aimeriez pouvoir stocker la réponse de l'utilisateur. C'est bien evidemment possible et simple. Lorsque vous déclarez (créez) une variable, vous pouvez saisir votre instruction <strong>input()</strong> à la place de la valeur. Exemple :
+              <pre>
+<code>reponse = input("Entrez du texte")</code>
+<code>print(reponse)</code>
+</pre>
+              Dans cet exemple, on enregistre la réponse de l'utilisateur dans une variable nommée "reponse" et on l'écrit avec l'instruction print().
             </p>
           </div>
         </div>
